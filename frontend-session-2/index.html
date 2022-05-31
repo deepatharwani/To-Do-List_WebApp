@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <title>Todo app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-app">
+        <header>
+          <h3 class="title">My Todo App</h3>
+
+          <span class="logout"
+            >Logout <i class="bx bx-right-arrow-alt"></i
+          ></span>
+        </header>
+        <main>
+          <section class="date-time">
+            <div class="time">12:56</div>
+            <div class="date">Tuesday, Nov 23</div>
+          </section>
+          <section>
+            <!-- User Input Form -->
+            <form id="myForm">
+              <input
+                type="text"
+                id="inputTodoItem"
+                placeholder="Add Item..."
+                autocomplete="off"
+              />
+              <button type="submit" id="btnAddUpdate">
+                <i class="bx bx-list-plus"></i>
+              </button>
+            </form>
+            <!-- ERROR Message -->
+            <div id="error"></div>
+            <div>
+              <!-- Todo Item list -->
+              <ul id="items">
+                <li>
+                  <input type="checkbox" />
+                  <span class="description">Lorem ipsum dolor sit amet.</span>
+                  <i class="bx bxs-edit"></i>
+                  <i class="bx bxs-trash"></i>
+                </li>
+                <li>
+                  <input type="checkbox" />
+                  <span class="description">Lorem ipsum dolor sit amet.</span>
+                  <i class="bx bxs-edit"></i>
+                  <i class="bx bxs-trash"></i>
+                </li>
+                <li>
+                  <input type="checkbox" />
+                  <span class="description">Lorem ipsum dolor sit amet.</span>
+                  <i class="bx bxs-edit"></i>
+                  <i class="bx bxs-trash"></i>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script> 
+    <script src="jquery.min.js"></script>
+    <script src="todo.js"></script> 
+  </body>
+</html>
+

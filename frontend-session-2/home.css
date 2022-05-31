@@ -1,0 +1,211 @@
+@import url('./common.css');
+
+.container {
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-color-light);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  width: 90%;
+}
+
+main {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+/* HEADER */
+header {
+  background: var(--header-bg);
+  padding: 2rem;
+  border-bottom: 0.7rem solid var(--theme-color);
+  text-align: center;
+  position: relative;
+}
+
+header h3 {
+  color: var(--theme-color);
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+header .logout {
+  font-size: 0.9rem;
+  padding: 0.2rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: transparent;
+  transition: all 0.5s;
+  /* transition: background 0.3s; */
+  transform: translateX(0);
+  display: flex;
+  align-items: center;
+}
+
+header .logout:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+header .logout:hover > i {
+  transform: translateX(2px);
+}
+
+/* DATE AND TIME */
+
+.date-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.date-time .time {
+  font-size: 3rem;
+}
+
+.date-time .date {
+  font-size: 1.3rem;
+  font-weight: 100;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+/* INPUT FORM */
+
+form {
+  display: flex;
+  margin: 0.5rem 0;
+}
+
+form input {
+  flex-grow: 1;
+  padding: 1rem;
+  border: 1px solid var(--bg-color-dark);
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+  outline: none;
+}
+
+form button {
+  background: var(--blue-light);
+  padding: 0 2rem;
+  border: 0;
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  font-size: 2rem;
+}
+
+form button i {
+  color: #fff;
+  transform: scale(1);
+  transition: transform 0.2s;
+}
+
+form button:hover {
+  background: var(--blue-dark);
+  cursor: pointer;
+}
+
+form button:hover > i {
+  transform: scale(1.2);
+}
+
+.update {
+  font-size: 1.2rem;
+  color: #fff;
+  /* background: var(--warning); */
+}
+/* ERROR */
+
+#error {
+  color: var(--danger);
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+
+#error .hl {
+  color: inherit;
+  background-color: yellow;
+  padding: 0 0.5rem;
+  font-weight: 400;
+}
+
+/* Items */
+
+ul {
+  background: #fff;
+  border: 1px solid var(--bg-color-dark);
+  border-radius: var(--border-radius);
+  font-size: 0.9rem;
+  list-style: none;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+ul li + li {
+  border-top: 1px solid var(--bg-color-dark);
+}
+
+ul li > input[type='checkbox'] {
+  margin-right: 1rem;
+  height: 1.1rem;
+  width: 1.1rem;
+}
+
+ul li > input[type='checkbox']:checked + .description {
+  text-decoration: line-through;
+}
+
+ul li > .description {
+  flex-grow: 1;
+}
+
+ul li > i {
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  opacity: 0;
+  transition: all 0.5s;
+  transform: translateX(20px);
+}
+
+ul li:hover > i {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+ul li > i:hover {
+  cursor: pointer;
+}
+
+ul li > i.bxs-edit:hover {
+  color: var(--warning);
+}
+
+ul li > i.bxs-trash:hover {
+  color: var(--danger);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 500px) {
+  section form {
+    order: 1;
+  }
+}

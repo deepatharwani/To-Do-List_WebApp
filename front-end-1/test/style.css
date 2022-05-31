@@ -1,0 +1,32 @@
+h1{
+    color: rgb(223, 35, 91);
+}
+
+.content{
+    background: black;
+    color: burlywood;
+}
+
+
+#btn{
+    background-color: aquamarine;
+}
+
+div p{
+    background-color: crimson;
+}
+
+div + p:hover {
+    color: red;
+    cursor: pointer;
+   }
+
+   p::first-letter{
+       font-size: large;
+       text-transform: uppercase;
+   }
+
+   input[type='text']{
+       border: 1px solid blue;
+       padding: 10px;
+   }

@@ -1,0 +1,101 @@
+@import url('./common.css');
+
+.container {
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  max-width: 400px;
+  background: var(--bg-color-light);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+section form {
+  width: 100%;
+}
+
+section > i {
+  font-size: 5rem;
+  margin-top: -3rem;
+  color: var(--blue-dark);
+}
+
+i.bx-border-circle {
+  padding: 0;
+  border: 0;
+  background-color: var(--bg-color-light);
+}
+
+section .title {
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 1rem 0 2rem 0;
+}
+
+.form-group {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 0.5rem 0;
+}
+
+.form-group label {
+  margin-bottom: 0.1rem;
+}
+
+.form-group > input {
+  padding: 0.7rem;
+  border: 1px solid var(--border-color);
+  outline: none;
+  color: var(--txt-color-light);
+  border-radius: var(--border-radius);
+}
+
+button[type='submit'] {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: #fff;
+  border: 0;
+  border-radius: var(--border-radius);
+  letter-spacing: 1px;
+  cursor: pointer;
+  background-color: var(--blue-light);
+}
+
+button[type='submit']:hover {
+  background: var(--blue-dark);
+}
+
+.switch-to-login-signup {
+  padding-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.switch-to-login-signup span {
+  cursor: pointer;
+  color: var(--blue-dark);
+  margin-left: 0.5rem;
+}
+
+.switch-to-login-signup span:hover {
+  text-decoration: underline;
+}
+
+#error_signup,
+#error_login {
+  color: var(--danger);
+  font-size: 0.8rem;
+}
+
+#signUpForm {
+  display: none;
+}
+

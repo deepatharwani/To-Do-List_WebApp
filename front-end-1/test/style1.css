@@ -1,0 +1,21 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: cornflowerblue;
+    margin:45px;
+    padding: 15px;
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: space-between;
+}
+
+.item{
+    background-color:lemonchiffon;
+    padding: 15px;
+    margin: 15px;
+    font-size: 35px;
+}

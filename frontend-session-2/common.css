@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css');
+ 
+:root {
+ --bg-color-dark: #e5e5e5;
+ --bg-color-light: #f6f6f6;
+ --txt-color-light: #727272;
+ --txt-color-dark: #464545;
+ --border-color: #d8d8d8;
+ --blue-light: #389af9;
+ --blue-dark: #2e95f9;
+ --danger: #c60303;
+ --warning: #ca9723;
+ --disabled: #c1c0c0;
+ --border-radius: 3px;
+ --theme-color: #fac345;
+ --header-bg: #2d2d36;
+}
+ 
+* {
+ padding: 0;
+ margin: 0;
+ font-family: 'Roboto', sans-serif;
+ font-weight: 300;
+ color: var(--txt-color-light);
+}
+ 
+.container {
+ display: flex;
+ height: 100vh;
+ width: 100vw;
+ font-weight: 300;
+ box-sizing: border-box;
+ background-color: #9599e2;
+ background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+}
+ 
+
